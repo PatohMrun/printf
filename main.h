@@ -1,4 +1,4 @@
-fndef MAIN_H 
+#ifndef MAIN_H 
 #define MAIN_H 
 
 #include <stdio.h> 
@@ -10,11 +10,10 @@ fndef MAIN_H
 
 
 /** 
-*   * struct format - match the conversion specifiers for printf 
-*     * @id: type char pointer of the specifier i.e (l, h) for (d, i, u, o, x, X) 
-*       * @f: type pointer to function for the conversion specifier 
-*         * 
-*           */ 
+*struct format - match the conversion specifiers for printf 
+*@id: type char pointer of the specifier i.e (l, h) for (d, i, u, o, x, X) 
+*@f: type pointer to function for the conversion specifier 
+*/ 
 
 typedef struct format 
 { 
